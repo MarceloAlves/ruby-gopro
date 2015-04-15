@@ -2,6 +2,7 @@ require "httparty"
 require "gopro/modules/commands"
 require "gopro/modules/modes"
 require "gopro/modules/settings"
+require "gopro/modules/media"
 
 class Gopro
   module Modules; end
@@ -10,6 +11,7 @@ class Gopro
   include Gopro::Modules::Commands
   include Gopro::Modules::Modes
   include Gopro::Modules::Settings
+  include Gopro::Modules::Media
   
   # By default the GoPro's IP address is 10.5.5.9
   def initialize(options={})

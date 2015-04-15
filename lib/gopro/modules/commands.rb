@@ -10,6 +10,11 @@ class Gopro
       def stop_capture
         self.class.get("/gp/gpControl/command/shutter?p=0")
       end
+
+      # Current GoPro Status
+      def status
+        self.class.get("/gp/gpControl/status")
+      end
     end
   end
 end

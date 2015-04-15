@@ -24,7 +24,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+hero = Gopro.new
+
+hero.mode(1)
+
+hero.start_capture
+```
 
 ## Development
 
