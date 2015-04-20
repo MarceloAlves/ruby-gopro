@@ -1,4 +1,5 @@
 # Gopro
+[![Build Status](https://travis-ci.org/MarceloAlves/ruby-gopro.svg?branch=master)](https://travis-ci.org/MarceloAlves/ruby-gopro)
 
 ### Extreme Work In Progress!
 
