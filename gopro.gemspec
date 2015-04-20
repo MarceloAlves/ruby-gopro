@@ -24,5 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "webmock"
+  spec.add_development_dependency "simplecov", ">= 0.9"
+  spec.add_development_dependency 'coveralls', '>= 0.8.0'
   spec.add_dependency "httparty"
 end

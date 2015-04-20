@@ -1,5 +1,9 @@
 # Gopro
+[![Gem Version](https://badge.fury.io/rb/ruby-gopro.svg)](http://badge.fury.io/rb/ruby-gopro)
 [![Build Status](https://travis-ci.org/MarceloAlves/ruby-gopro.svg?branch=master)](https://travis-ci.org/MarceloAlves/ruby-gopro)
+[![Dependency Status](https://gemnasium.com/MarceloAlves/ruby-gopro.svg)](https://gemnasium.com/MarceloAlves/ruby-gopro)
+[![Code Climate](https://codeclimate.com/github/MarceloAlves/ruby-gopro/badges/gpa.svg)](https://codeclimate.com/github/MarceloAlves/ruby-gopro)
+[![Coverage Status](https://coveralls.io/repos/MarceloAlves/ruby-gopro/badge.svg)](https://coveralls.io/r/MarceloAlves/ruby-gopro)
 
 ### Extreme Work In Progress!
 
