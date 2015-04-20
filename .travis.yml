@@ -1,3 +1,6 @@
 language: ruby
 rvm:
-  - 2.2.0
+- 2.2.0
+notifications:
+  slack:
+    secure: XzR7MqzYXcyPdLOs5tmWgzzJe3b75RMNgNUUJrtuJxM2mf/JRtiQxM627zzDaBS29nav3QKClUppgPVzzPilsXy7zFMWCU2kHNjzdYfCi7x63KTwmx7M7i7qXwdOFYKEhShGTHVsIBkm8nvx7AXVK/12i9C1ZaZ51qijdFMS5OI=
