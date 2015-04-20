@@ -1,6 +1,7 @@
 class Gopro
   module Modules
     module Media
+      VIDEO_URL = "videos/DCIM/"
       # List all media currently on the GoPro
       def list_media
         self.class.get("/gp/gpMediaList")
