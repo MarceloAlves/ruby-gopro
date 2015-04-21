@@ -35,8 +35,8 @@ describe Gopro do
       pending("to do")
       fail
       # VCR.use_cassette("status") do
-      #   status = hero.status
-      #   expect(status).to have_http_status(:success)
+      #   response = hero.status
+      #   expect(response.code).to eq(200)
       # end
     end
 
@@ -48,29 +48,35 @@ describe Gopro do
     end
 
     it 'stops capture' do
-      pending("to do")
-      fail
-      # VCR.use_cassette("stop_capture") do
-      #   response = hero.stop_capture
-      #   expect(response).to eq(200)
-      # end
+      # pending("to do")
+      # fail
+      VCR.use_cassette("stop_capture") do
+        response = hero.stop_capture
+        expect(response.code).to eq(200)
+      end
     end
   end
 
   context 'media' do
     it 'deletes last media' do
-      pending("to do")
-      fail
+      VCR.use_cassette("delete_last_media") do
+        response = hero.delete_last_media
+        expect(response.code).to eq(200)
+      end
     end
 
     it 'deletes all media' do
-      pending("to do")
-      fail
+      VCR.use_cassette("delete_all_media") do
+        response = hero.delete_all_media
+        expect(response.code).to eq(200)
+      end
     end
 
     it 'lists all media' do
-      pending("to do")
-      fail
+      VCR.use_cassette("list_all_media") do
+        response = hero.list_media
+        expect(response.code).to eq(200)
+      end
     end
   end
 end
