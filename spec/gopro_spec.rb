@@ -15,18 +15,24 @@ describe Gopro do
 
   context 'modes' do
     it 'switches to video mode' do
-      pending("to do")
-      fail
+      VCR.use_cassette("video mode") do
+        response = hero.mode(0)
+        expect(response.code).to eq(200)
+      end
     end
 
     it 'switches to photo mode' do
-      pending("to do")
-      fail
+      VCR.use_cassette("photo mode") do
+        response = hero.mode(1)
+        expect(response.code).to eq(200)
+      end
     end
 
     it 'switches to burst mode' do
-      pending("to do")
-      fail
+      VCR.use_cassette("burst_mode") do
+        response = hero.mode(2)
+        expect(response.code).to eq(200)
+      end
     end
   end
 
@@ -48,8 +54,6 @@ describe Gopro do
     end
 
     it 'stops capture' do
-      # pending("to do")
-      # fail
       VCR.use_cassette("stop_capture") do
         response = hero.stop_capture
         expect(response.code).to eq(200)
